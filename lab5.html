@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formlar</title>
+    <style>
+        .form-wrapper{
+            max-width: 600px;
+            margin : 0 auto;
+        }
+        .form-wrapper > h2{
+            text-align: center;
+            margin-bottom : 2rem;
+        }
+        .form-wrapper .form-group{
+            display: flex;
+            margin-bottom : 2rem;
+            align-items: center;
+        }
+        .form-group span{
+            flex : 1;
+        }
+        .form-group input{
+            flex : 4;
+            padding : 0.5rem 0.75rem;
+            border-radius : 5px;
+        }
+        .form-wrapper button{
+            text-align: center;
+            padding : 0.5rem 0.75rem;
+            background-color: rgb(81, 81, 224);
+            color : white;
+            border-radius :6px;
+            cursor: pointer;
+        }
+        .form-wrapper button:hover{
+            background-color: white;
+            border : 2px solid blue;
+            color : blue;
+        }
+        .radio-wrapper{
+            flex: 4;
+        }
+    </style>
+</head>
+<body>
+     
+     <div class="form-wrapper">
+         <h2>Qeydiyyat formu </h2>
+        <form action="">
+            <div class="form-group">
+                <span> Ad </span> <input type="text" name="" id=""> 
+            </div>
+            <div class="form-group">
+                <span> Soyad </span> <input type="text" name="" id=""> 
+            </div> 
+            <div class="form-group">
+                <span> Dogum tarixi</span> <input type="date" name="" id=""> 
+            </div>   
+            <div class="form-group">
+                <span> Cins </span>
+                <div class="radio-wrapper">
+                    Kisi <input type="radio" name="gender" id=""> 
+               Qadin <input type="radio" name="gender" id="">
+                </div>  
+               
+            </div>  
+            <div class="form-group">
+                <span> Sifre </span> <input type="password" name="" id=""> 
+            </div>
+            <div class="form-group">
+                <span> Sifre </span> <input type="password" name="" id=""> 
+            </div>        
+           
+                <button type='submit'>  Qeydiyyatdan kec</button>
+          
+
+        </form>
+     </div>
+</body>
+</html>
